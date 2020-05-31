@@ -1,3 +1,5 @@
+//TypeJS
+
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -53,4 +55,45 @@ window.onload = function() {
   // css.type = "text/css";
   // css.innerHTML = ".txt-rotate > .wrap { border-right: 0 solid #666 }";
   // document.body.appendChild(css);
+
+  // Menu JS
+  var hamMenu = document.querySelector('.ham-menu');
+
+  hamMenu.addEventListener('click', function(){
+    hamMenu.classList.toggle('open');
+  })
+
 };
+
+
+
+
+
+
+
+// var hamMenu = document.querySelector('.ham-menu');
+// var dropMenu = document.querySelector('.drop-menu');
+// var dropMenuList = document.querySelectorAll('.drop-menu div');
+// var dropMenuListText = document.querySelectorAll('.drop-menu div a');
+//
+// hamMenu.addEventListener('click',() => {
+//   console.log('fsdgd');
+//   dropMenu.classList.toggle('drop-down');
+//   hamMenu.children[0].classList.toggle('top');
+//   hamMenu.children[1].classList.toggle('mid');
+//   hamMenu.children[2].classList.toggle('bottom');
+// });
+//
+// dropMenuList.forEach(li => {
+//
+//     li.addEventListener('mouseover', (e) => {
+//     li.style.backgroundImage = "linear-gradient(to right,#EBF5F8,#58A29F)";
+//     li.children[0].style.color = "white";
+//   });
+//
+//     li.addEventListener('mouseleave', (e) => {
+//     li.style.backgroundImage = "linear-gradient(to right,#EBF5F8,#EBF5F8)";
+//     li.children[0].style.color = "#58A29F";
+//   });
+//
+// });
