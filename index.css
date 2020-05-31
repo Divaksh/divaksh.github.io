@@ -20,13 +20,7 @@ body {
   padding: 0;
   cursor: url("https://i.imgur.com/zkZbB5k.png"), auto;
 }
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
+
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -238,8 +232,16 @@ glitch:before, .glitch-txt:before {
     margin-right: 5px;
 }
 
-.term-command {
+/* Type Terminal */
+.term-user {
+    font-size: 110%;
+}
+#term-command {
   font-weight: normal !important;
+}
+
+#term-content {
+  
 }
 
 .green {
