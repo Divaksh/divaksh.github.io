@@ -14,7 +14,7 @@
 body {
   background-color: #000;
   color: #fff;
-  font-family: "Droid Sans Mono", monospace;
+  font-family: 'Source Code Pro', monospace;
   font-size: 12pt;
   margin: 0;
   padding: 0;
@@ -190,10 +190,30 @@ glitch:before, .glitch-txt:before {
   color: red;
 }
 
+.megenta {
+  color: #ff0096;
+}
 b, strong {
     font-weight: bolder;
 }
 
+.cursor::after {
+  content:'';
+  display:inline-block;
+  margin-left:3px;
+  background-color:white;
+  animation-name:blink;
+  animation-duration:0.5s;
+  animation-iteration-count: infinite;
+}
+h1.cursor::after {
+  height:24px;
+  width:13px;
+}
+p.cursor::after {
+  height:13px;
+  width:6px;
+}
 
 
 
