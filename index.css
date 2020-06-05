@@ -166,10 +166,12 @@ glitch:before, .glitch-txt:before {
 /* Termincal Screen */
 #terminal-container {
   position: relative;
-  margin: 30px auto 0;
+  margin: 30px auto 20px;
   border: 1px solid #333;
   padding: 42px 20px 20px 20px;
-  height: 500px;
+  height: auto;
+  max-height: 80vh;
+  overflow-y: scroll;
   border-radius: 8px;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
@@ -240,9 +242,17 @@ glitch:before, .glitch-txt:before {
   font-weight: normal !important;
 }
 
-#term-content {
-  
+#intro {
+  display: none;
 }
+
+.nodisplay {
+  display: none;
+  }
+
+/* #term-content {
+} */
+
 
 .green {
     color: #0f0;

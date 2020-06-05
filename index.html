@@ -3,10 +3,60 @@
   <head>
     <title>Divaksh Jain - Founder | Full Stack Developer | Blogger | Reviewer</title>
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="prism.css">
     <script src="index.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" charset="utf-8"></script>
 
+    <script type="text/javascript">
+    $(document).ready(function() {
+
+      $('#term-content').hide();
+
+      var typewriter1 = new Typed("#term-command", {
+        strings: ["cat about.txt&#11176;"],
+        typeSpeed: 100,
+        startDelay: 0,
+        backSpeed: 60,
+        backDelay: 2000,
+        loop: false,
+        cursorChar: "",
+        contentType: 'html',
+        onComplete: function () {
+            $(".typed-cursor").hide();
+            setTimeout(
+              function() {
+                loadIntro();
+              }, 100);
+        }
+      });
+
+      function loadIntro(){
+        $("#intro").fadeIn(150);
+        var typewriter1 = new Typed(".txt-rotate", {
+          strings: ["a Full Stack Developer.", "an Inventor.", "an Entrepreneur.", "a Life Rescuer.", "a Trader.", "a Photographer.", "a Blogger."],
+          typeSpeed: 30,
+          startDelay: 0,
+          backSpeed: 10,
+          backDelay: 1000,
+          loop: true,
+          showCursor: false,
+          contentType: 'html',
+        });
+      //$('#term-content').load('/about.txt #term-content').css("display","none");
+        setTimeout(
+          function() {
+            var typed6 = new Typed('#typed-content', {
+              stringsElement: "#term-content",
+              typeSpeed: 50,
+              backSpeed: 0,
+              loop: false
+            });
+          }, 100);
+      };
+    });
+
+    </script>
 
   </head>
   <body>
@@ -47,28 +97,23 @@
     </div>
     <div class = "term-user"><span class="green">me@divaksh</span>:<span class="megenta">~</span><span class="blue">$</span> <span id="term-command" style="white-space:pre;" class="term-command"></span></div>
     <br>
-        <div id="term-content">
-          <h1>Namaste, My name is <strong class="orange">Divaksh Jain</strong></h1>
-          <h1 class="cursor">I'm <span
-           class="txt-rotate"
-           data-period="1000"
-           data-rotate='["a Full Stack Developer.", "an Inventor.", "an Entrepreneur.", "a Life Rescuer."]'></span></h1>
-          <p>I currently work from Jaipur, India. (26° 55' 19.4520'' N and 75° 46' 43.9860'' E)
-
-          I'm a passionate and versatile individual with an entrepreneurial and "get stuff done" mindset who never says no to the challenges.
-
-          I always aim to build something unique to solve problems confronting mankind with the help of technology.
-          I never settle for good enough, always have the willingness to change for the best, so I always try to exploit new ideas to resolve real-life problems.
-          I think creatively, and when It gets clubbed with my problem-solving as well as technical abilities, it brings real innovation.
-
-          If you want to get in touch, please contact me on LinkedIn or throw me an email me@divaksh.me
-
-          Thank you for stopping by!
-
-          – Divaksh</p>
+    <div id = "intro">
+      <h1>Namaste, My name is <strong class="orange">Divaksh Jain</strong></h1>
+     <h1 class="cursor">I'm <span
+      class="txt-rotate"></span></h1>
+    </div>
+          <div id="term-content">
+            <p>
+              <br> ^1000 `I'm a passionate and versatile software developer with an entrepreneurial and "get stuff done" mindset who never says no to the challenges.`
+              <br> ^1000 `I never settle for good enough, always have the willingness to change for the best, so I always try to exploit new ideas to resolve real-life problems.`
+              <br> ^1000 `I think creatively, and when it gets clubbed with my problem-solving as well as technical abilities, it brings real innovation.`
+            </p>
           </div>
+          <span id="typed-content"></span>
+          <div class = "term-user nodisplay"><span class="green">me@divaksh</span>:<span class="megenta">~</span><span class="blue">$</span> <span id="term-command" style="white-space:pre;" class="term-command"></span></div>
         </div>
       </div>
     </div>
+    <script src="prism.js" charset="utf-8"></script>
   </body>
 </html>
